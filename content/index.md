@@ -1,5 +1,16 @@
 ---
 title: "Min fina titel"
+
+views:
+    byline:
+        region: main
+        sort: 2
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/byline
+
 ---
 Min me-sida i kursen design
 =========================
@@ -22,14 +33,3 @@ Har ni frågor eller funderingar, välkommen att höra av er!
 
 All kärlek och värme,
 Emma Burén
-<?php include(__DIR__ . "/view/byline.php"); ?> 
-<<div class="byline">
-    <img src="img/emma.jpg" alt="Emma Burén">
-        <p><b>Emma Burén</b> studerar till beteendevetare på Stockholms Universitet
-             och läser parallellt webbprogrammering vid Blekinge Tekniska Högskola.
-             För att balansera livet tillbringar Emma en del tid åt löpning och yoga.
-             Så fort hon får chansen reser hon gärna och upplever nya människor, platser och kulturer.
-        </p>
-        <br>
-        <p class="textbylineimg">Emma Burén</p>
-</div>
