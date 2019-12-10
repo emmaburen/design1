@@ -6,20 +6,30 @@ Min me-sida i kursen design
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/emma.jpg?w=500" class="right" caption="Bild på mig"]
 
 Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Jag heter Emma Burén och är utbildad resekonsult, grafisk designer och halvvägs in i min utbildning till att bli beteendevetare. Jag har ett stort intresse av hur vi människor fungerar och varför vi gör som vi gör och har under utbildningens gång utvecklat ett stort intresse för coaching och utveckling. Jag tycker det är spännande att rota i vad som är drivkraften bakom våra beteenden och hur kan vi leva våra liv i linje med både våra behov och inre önskningar samt i harmoni med kropp och själ. Utöver mina tre olika utbildningar har jag även läst en del fristående kurser inom ämnen som intresserar mig, såsom retorik, hjärnans biokemi, css-baserad webb-design och projektledning. Min förhoppning är att kunna kombinera det jag läser i ett framtida yrke.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Jag är född och uppvuxen i en ort söder om Stockholm som heter Huddinge och jag är yngst i en syskonskara om fyra. När jag var yngre gillade jag att spela fotboll och jag har spenderat många timmar på fotbollsplanen tillsammans med Segeltorps IF. Numera försöker jag balansera livets olika delar med hjälp av löpning och yoga. Rörelse och stillhet är viktiga parametrar i mitt liv, så även gott umgänge och möjlighet till att utvecklas. Jag gillar att vara ute i naturen, bada kallbad, bada bastu och lyxa till det med god mat och SPA.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Jag gillar verkligen att resa och har genom mina år inom resebranschen fått uppleva en hel del magiska platser runt om i världen. En av mina absoluta favoritplatser i hela världen är Sydney, där jag även bodde under en tid. Jag har ända sedan jag var liten älskat att resa och minns vår första utlandsresa till Grekland med hela familjen och tyckte att det var så roligt att åka till ett varmare klimat och uppleva en helt annan kultur och miljö än den vi är vana vid i Sverige.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+Jag har också ett stort intresse för färg och form, ibland hittar ni mig sittandes vid köksbordet och målar tavlor i oljefärg. Det är något rogivande i själen att kombinera olika färger så att allt passar ihop.
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
+Har ni frågor eller funderingar, välkommen att höra av er!
 
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+All kärlek och värme,
+Emma Burén
+<?php include(__DIR__ . "/view/byline.php"); ?> 
+<<div class="byline">
+    <img src="img/emma.jpg" alt="Emma Burén">
+        <p><b>Emma Burén</b> studerar till beteendevetare på Stockholms Universitet
+             och läser parallellt webbprogrammering vid Blekinge Tekniska Högskola.
+             För att balansera livet tillbringar Emma en del tid åt löpning och yoga.
+             Så fort hon får chansen reser hon gärna och upplever nya människor, platser och kulturer.
+        </p>
+        <br>
+        <p class="textbylineimg">Emma Burén</p>
+</div>
