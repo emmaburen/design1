@@ -1,3 +1,8 @@
-#### Footer col 2
+#### Sociala medier
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här hittar du oss i social media  
+* [Instagram] [insta]  
+* [Facebook] [fb]
+
+[insta]: https://instagram.com/burrmode "Instagram"
+[fb]: https://www.facebook.com/emmaburens "Facebook"

@@ -1,3 +1,4 @@
-#### Footer col 3
+#### Aktuellt 
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Just nu håller vi på med ett projekt som heter **Heja den humana hållbarheten**
+Vill du veta mer eller vara delaktig i projektet vänligen kontakta oss på heja@burrmode.se

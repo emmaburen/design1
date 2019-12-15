@@ -1,3 +1,4 @@
-#### Footer col 1
+#### Kontakta mig
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Ring oss på 0736667684
+Maila oss på hej@burrmode.se
