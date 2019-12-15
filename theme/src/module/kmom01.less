@@ -1,0 +1,202 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* Poor-mans normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+/* Container */
+.wrap-all {
+    background-color: #fec99b;
+}
+
+.outer-wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.inner-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner-wrap-flash {
+    width: 100%;
+}
+
+.row::after {
+    clear: both;
+}
+
+/* Header */
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text {
+    display: none;
+}
+
+.my-navbar {
+    padding-top: 25px;
+    list-style-type: none;
+    font-size: 14px;
+    height: 50px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    word-spacing: 2em;
+    color: #fec99b;
+}
+
+.my-navbar li{
+    display: inline;
+}
+
+.my-navbar a {
+    color: #f3e1ce;
+    text-decoration: none;
+}
+
+.my-navbar a:hover {
+    background: #f3e1ce;
+    color: #7c7b7b;
+}
+
+.my-navbar a:active {
+    background: #eec497;
+    color: #7c7b7b;
+}
+
+.my-navbar .selected {
+    background-color: #eec497;
+}
+
+.outer-wrap-header {
+    background-color: #00263a;
+    color: #fec99b;
+}
+
+.inner-wrap-header {
+    height: 80px;
+}
+/* Main */
+p {
+    color: #371e08;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-right: 50px;
+}
+
+.outer-wrap-main {
+    width: 100%;
+}
+
+.inner-wrap-main {
+    width: 100%;
+    padding: 10px 0;
+    float: left;
+    margin-left: 20px;
+}
+
+.byline {
+    padding: 20px;
+    border-top: 1px solid #454545;
+    width: 60%;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    overflow: scroll;
+    clear: both;
+}
+
+.byline img {
+    width: 70px;
+    float: left;
+}
+
+.byline p {
+    padding-left: 100px;
+    display: block;
+    margin: 0;
+    text-align: justify;
+}
+
+.textbylineimg {
+    font-style: italic;
+    clear: both;
+}
+
+.wrap-sidebar {
+    float: left;
+    margin-right: 10px;
+}
+
+.region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 30%;
+    margin-right: .52083333%;
+}
+
+.region-main.has-sidebar-right {
+display: inline;
+float: left;
+width: 65.625%;
+margin-right: .52083333%;
+margin-left: .52083333%;
+}
+
+/* Footer*/
+
+.outer-wrap-footer {
+    background-color: #fa6f53;
+    color: white;
+}
+
+.inner-wrap-footer {
+    padding: 30px;
+    color: white;
+}
+
+.region-footer>.block {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-column {
+    width: 33%;
+    float: left;
+}

@@ -1,0 +1,54 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+ /* Poor-mans normalize */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+@bgColorHtml: #ffffff;
+@bgColorBody: #ffffff;
+@colorBody: #371e08;
+@fontFamilyBody: Helvetica, sans-serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: #fff;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+p {
+    color: @colorBody;
+    font-family: @fontFamilyBody;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5em;
+    //margin-right: 50px;
+}
+
+h1 {
+    font-family: "Dirt Road", Helvetica;
+    color: #00263a;
+}
+
+h4 {
+    font-family: Helvetica;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5em;
+    color: #00263a;
+}
+
+img {
+    max-width: 100%;
+}
