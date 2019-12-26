@@ -5,6 +5,4 @@
              För att balansera livet tillbringar Emma en del tid åt löpning och yoga.
              Så fort hon får chansen reser hon gärna och upplever nya människor, platser och kulturer.
         </p>
-        <br>
-        <p class="textbylineimg">Emma Burén</p>
 </div>

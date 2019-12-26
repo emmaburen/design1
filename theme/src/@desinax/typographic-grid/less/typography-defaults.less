@@ -6,8 +6,8 @@
 @fontSizeBody: 16px;
 
 // Default font-families
-@fontFamilyHeadings: "serif";
-@fontFamilyBody:     "sans-serif";
+@fontFamilyHeadings: @myfontheading;
+@fontFamilyBody:     @fontFamilyHelveticaNeue;
 @fontFamilyCode:     "monospace";
 
 // header h1-h6 font sixe
@@ -25,12 +25,15 @@
 @colorH4BorderBottom: #EEE;
 @colorH5BorderBottom: #EEE;
 @colorH6BorderBottom: #EEE;
-@borderSizeH1: 1px;
-@borderSizeH2: 1px;
-@borderSizeH3: 1px;
-@borderSizeH4: 1px;
-@borderSizeH5: 1px;
-@borderSizeH6: 1px;
+@borderSizeH1: 0px;
+@borderSizeH2: 0px;
+@borderSizeH3: 0px;
+@borderSizeH4: 0px;
+@borderSizeH5: 0px;
+@borderSizeH6: 0px;
+
+// Color navbar
+@colorNavbar:   #00263a;
 
 // fontsize code blocks
 //@fontSizeCodeInline:  1.25em;
@@ -76,7 +79,7 @@
         background-image: url("@{gridImage}");
     }
 
-    .showGridAlt(@gridColor: #f4e3d7) {
+    .showGridAlt(@gridColor: #454545) {
         background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent (@magicNumber - 1), @gridColor (@magicNumber - 1), @gridColor @magicNumber);
     }
 
@@ -99,12 +102,23 @@
      */
     .typographyHeadings() {
         h1,
+         {
+            font-family: @fontFamilyHeadings;
+            margin-top: @magicNumber;
+            margin-bottom: @magicNumber;
+
+            img {
+                margin: 0;
+            }
+        }
+
         h2,
         h3,
         h4,
         h5,
         h6 {
-            font-family: @fontFamilyHeadings;
+
+            font-family: @fontFamilyArial;
             margin-top: @magicNumber;
             margin-bottom: @magicNumber;
 
@@ -116,7 +130,7 @@
         h1 {
             #desinax-hgrid.fontSize(@fontSizeH1);
 
-            font-weight: normal;
+            font-weight: bold;
             border-bottom: @borderSizeH1 solid @colorH1BorderBottom;
             margin-bottom: @magicNumber - @borderSizeH1;
 
