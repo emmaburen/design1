@@ -1,0 +1,57 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 1500px) {
+    .site-logo {
+        display: none;
+    }
+}
+
+// Responsive style for Navbar menu
+ @media screen and (max-width: 800px) {
+     .my-navbar {
+         word-spacing: 0.5em;
+     }
+ }
+
+
+ @media screen and (max-width: 500px) {
+     .rm-desktop {
+         display: none;
+     }
+ }
+
+ // Responsive style for 1, 2 and 3
+
+ @media screen and (max-width: 800px) {
+     .region-main {
+         #desinax-vgrid.column(@columns);
+         #desinax-vgrid.push(0);
+     }
+ }
+
+ @media screen and (max-width: 800px) {
+     .region-main&.has-sidebar {
+          #desinax-vgrid.column(@columns);
+      }
+ }
+
+ @media screen and (max-width: 800px) {
+     .region-main&.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+       }
+ }
+
+ @media screen and (max-width: 800px) {
+     .has-sidebar-left, .has-sidebar-right {
+         #desinax-vgrid.column(@columns);
+     }
+ }
+
+  // Responsive style for Footer
+  @media screen and (max-width: 800px) {
+      .footer-column {
+              #desinax-vgrid.column(@columns);
+      }
+  }

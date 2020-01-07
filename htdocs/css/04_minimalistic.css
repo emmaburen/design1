@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * MINIMALISTIC version of the stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03.
  */
@@ -79,11 +79,11 @@ html {
   background-color: transparent;
 }
 body {
-  font: 16px/1.5 'Source Sans Pro', sans-serif;
+  font: 16px/1.5 "Lato", "Myriad Pro", Geneva;
   margin: 0;
   padding: 0;
   color: #371e08;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Myriad Pro", Geneva;
 }
 p {
   color: #371e08;
@@ -174,7 +174,7 @@ img {
   background-image: url("../img/magic-number-24px.png");
 }
 h1 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Verdana, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Verdana, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -200,6 +200,7 @@ h6 img {
 h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
+  color: #47331A;
   font-weight: bold;
   border-bottom: 0px solid #666;
   margin-bottom: 24px;
@@ -238,7 +239,8 @@ h3 + h4 {
 h4 {
   font-size: 1.5em;
   line-height: 1;
-  font-weight: normal;
+  color: white;
+  font-weight: bold;
   margin-bottom: 24px;
   border-bottom: 0px solid #EEE;
 }
@@ -348,6 +350,7 @@ ul,
 ol {
   margin-bottom: 24px;
   padding-left: 1.5em;
+  text-decoration: none;
 }
 ul p,
 ol p {
@@ -486,7 +489,7 @@ hr::after {
 /* Header *
 */
 .outer-wrap-header {
-  background-color: #00263a;
+  background-color: #C78F4A;
   color: #fec99b;
 }
 .inner-wrap-header {
@@ -531,29 +534,29 @@ hr::after {
 .site-logo-text {
   display: none;
 }
-.my-navbar {
+.rm-navbar {
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Myriad Pro", Geneva;
   word-spacing: 2em;
-  color: #fec99b;
+  color: white;
 }
-.my-navbar li {
+.rm-navbar li {
   display: inline;
 }
-.my-navbar a {
-  color: #f3e1ce;
+.rm-navbar li a {
+  color: white;
   text-decoration: none;
 }
-.my-navbar a:hover {
-  background: #f3e1ce;
-  color: #7c7b7b;
+.rm-navbar a:hover {
+  background: #C7A985;
+  color: #917B61;
 }
-.my-navbar a:active {
-  background: #eec497;
-  color: #7c7b7b;
+.rm-navbar a:active {
+  background: #C78F4A;
+  color: #917B61;
 }
-.my-navbar .selected {
-  background-color: #eec497;
+.rm-navbar .selected {
+  background-color: #C78F4A;
 }
 /**
 /* Flash *
@@ -612,9 +615,12 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
+  background-color: #C78F4A;
   padding-left: 1em;
   padding-right: 0.5em;
+}
+.region-sidebar-left p {
+  color: white;
 }
 .region-sidebar-right {
   display: inline;
@@ -622,10 +628,12 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
-  color: #371e08;
+  background-color: #C78F4A;
   padding-left: 1em;
   padding-right: 0.5em;
+}
+.region-sidebar-right p {
+  color: white;
 }
 .article {
   margin-left: 4.6875%;
@@ -635,14 +643,14 @@ hr::after {
 }
 .next {
   color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Lato", "Myriad Pro", Geneva;
   font-size: 0.875em;
   text-align: left;
   float: right;
 }
 .previous {
   color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Lato", "Myriad Pro", Geneva;
   font-size: 0.875em;
   text-align: left;
   float: left;
@@ -677,13 +685,13 @@ hr::after {
 .toc {
   color: #371e08;
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Myriad Pro", Geneva;
   padding-left: 1em;
   color: white;
 }
 /* Footer*/
 .outer-wrap-footer {
-  background-color: #fa6f53;
+  background-color: #C78F4A;
   color: white;
 }
 .inner-wrap-footer {
@@ -693,7 +701,7 @@ hr::after {
   margin-bottom: 24px;
 }
 .region-footer p {
-  color: #fec99b;
+  color: white;
 }
 .footer-column {
   display: inline;
@@ -810,9 +818,6 @@ hr::after {
   border: 1px solid #6cbac4;
   color: #111;
 }
-/**
- * My own settings, not currently in their own module.
- */
 /**
  * Normalize and reset the style.
  */

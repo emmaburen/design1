@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * DARK version of the stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03.
  */
@@ -79,11 +79,11 @@ html {
   background-color: transparent;
 }
 body {
-  font: 16px/1.5 'Source Sans Pro', sans-serif;
+  font: 16px/1.5 "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
   margin: 0;
   padding: 0;
   color: #371e08;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
 }
 p {
   color: #371e08;
@@ -174,7 +174,7 @@ img {
   background-image: url("../img/magic-number-24px.png");
 }
 h1 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Pathway Gothic One", Verdana, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Pathway Gothic One", Verdana, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -200,6 +200,7 @@ h6 img {
 h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
+  color: #520018;
   font-weight: bold;
   border-bottom: 0px solid #666;
   margin-bottom: 24px;
@@ -238,7 +239,8 @@ h3 + h4 {
 h4 {
   font-size: 1.5em;
   line-height: 1;
-  font-weight: normal;
+  color: white;
+  font-weight: bold;
   margin-bottom: 24px;
   border-bottom: 0px solid #EEE;
 }
@@ -348,6 +350,7 @@ ul,
 ol {
   margin-bottom: 24px;
   padding-left: 1.5em;
+  text-decoration: none;
 }
 ul p,
 ol p {
@@ -486,7 +489,7 @@ hr::after {
 /* Header *
 */
 .outer-wrap-header {
-  background-color: #00263a;
+  background-color: #520018;
   color: #fec99b;
 }
 .inner-wrap-header {
@@ -531,29 +534,29 @@ hr::after {
 .site-logo-text {
   display: none;
 }
-.my-navbar {
+.rm-navbar {
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
   word-spacing: 2em;
-  color: #fec99b;
+  color: white;
 }
-.my-navbar li {
+.rm-navbar li {
   display: inline;
 }
-.my-navbar a {
-  color: #f3e1ce;
+.rm-navbar li a {
+  color: white;
   text-decoration: none;
 }
-.my-navbar a:hover {
-  background: #f3e1ce;
-  color: #7c7b7b;
+.rm-navbar a:hover {
+  background: #91002C;
+  color: white;
 }
-.my-navbar a:active {
-  background: #eec497;
-  color: #7c7b7b;
+.rm-navbar a:active {
+  background: #91002C;
+  color: white;
 }
-.my-navbar .selected {
-  background-color: #eec497;
+.rm-navbar .selected {
+  background-color: #DE0043;
 }
 /**
 /* Flash *
@@ -612,9 +615,12 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
+  background-color: #91002C;
   padding-left: 1em;
   padding-right: 0.5em;
+}
+.region-sidebar-left p {
+  color: white;
 }
 .region-sidebar-right {
   display: inline;
@@ -622,10 +628,12 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
-  color: #371e08;
+  background-color: #91002C;
   padding-left: 1em;
   padding-right: 0.5em;
+}
+.region-sidebar-right p {
+  color: white;
 }
 .article {
   margin-left: 4.6875%;
@@ -634,15 +642,15 @@ hr::after {
   align-content: start;
 }
 .next {
-  color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #520018;
+  font-family: "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
   font-size: 0.875em;
   text-align: left;
   float: right;
 }
 .previous {
-  color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #520018;
+  font-family: "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
   font-size: 0.875em;
   text-align: left;
   float: left;
@@ -675,15 +683,14 @@ hr::after {
 }
 /* Sidebar layout */
 .toc {
-  color: #371e08;
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Barlow", "Hiragino Sans GB", "Microsoft JhengHei", arial, helvetica, sans-serif;
   padding-left: 1em;
   color: white;
 }
 /* Footer*/
 .outer-wrap-footer {
-  background-color: #fa6f53;
+  background-color: #520018;
   color: white;
 }
 .inner-wrap-footer {
@@ -693,7 +700,7 @@ hr::after {
   margin-bottom: 24px;
 }
 .region-footer p {
-  color: #fec99b;
+  color: white;
 }
 .footer-column {
   display: inline;
@@ -810,9 +817,34 @@ hr::after {
   border: 1px solid #6cbac4;
   color: #111;
 }
-/**
- * My own settings, not currently in their own module.
- */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v4/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pathway Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'), url(https://fonts.gstatic.com/s/pathwaygothicone/v8/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-tS1Za.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
 /**
  * Normalize and reset the style.
  */

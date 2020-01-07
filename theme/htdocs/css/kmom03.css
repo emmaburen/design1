@@ -79,7 +79,7 @@ html {
   background-color: transparent;
 }
 body {
-  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
   color: #371e08;
@@ -174,7 +174,7 @@ img {
   background-image: url("../img/magic-number-24px.png");
 }
 h1 {
-  font-family: "Cheveuxdange", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Arial, sans-serif;
+  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -635,14 +635,14 @@ hr::after {
 }
 .next {
   color: #371e08;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.875em;
   text-align: left;
   float: right;
 }
 .previous {
   color: #371e08;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.875em;
   text-align: left;
   float: left;

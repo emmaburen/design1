@@ -6,7 +6,7 @@
 @fontSizeBody: 16px;
 
 // Default font-families
-@fontFamilyHeadings: @myfontheading;
+@fontFamilyHeadings: @myfontheadingmin;
 @fontFamilyBody:     @myfontparagraph;
 @fontFamilyCode:     "monospace";
 
@@ -32,8 +32,13 @@
 @borderSizeH5: 0px;
 @borderSizeH6: 0px;
 
-// Color navbar
-@colorNavbar:   #00263a;
+
+// Color scheme monocramic
+@browncolor:        #7A572D;
+@browndarkcolor:    #47331A;
+@lightbrowncolor:   #917B61;
+@coffeecolor:       #C78F4A;
+@beigecolor:        #C7A985;
 
 // fontsize code blocks
 //@fontSizeCodeInline:  1.25em;
@@ -68,12 +73,6 @@
 
 @bgColorHr: #fff;
 
-//Color scheme
-@color1:    #F55071;
-@color2:    #CCC461;
-@color3:    #B0C37B;
-@color4:    #D9D4B3;
-@color5:    #F4D5A6;
 
 
 #desinax-hgrid {
@@ -109,7 +108,7 @@
     .typographyHeadings() {
         h1,
          {
-            font-family: @fontFamilyHeadings;
+            font-family: @myfontheadingmin;
             margin-top: @magicNumber;
             margin-bottom: @magicNumber;
 
@@ -124,7 +123,7 @@
         h5,
         h6 {
 
-            font-family: @fontFamilyHeadings;
+            font-family: @myfontheadingmin;
             margin-top: @magicNumber;
             margin-bottom: @magicNumber;
 
@@ -135,7 +134,7 @@
 
         h1 {
             #desinax-hgrid.fontSize(@fontSizeH1);
-
+            color: @browndarkcolor;
             font-weight: bold;
             border-bottom: @borderSizeH1 solid @colorH1BorderBottom;
             margin-bottom: @magicNumber - @borderSizeH1;
@@ -182,8 +181,8 @@
 
         h4 {
             #desinax-hgrid.fontSize(@fontSizeH4);
-
-            font-weight: normal;
+            color: white;
+            font-weight: bold;
             margin-bottom: @magicNumber - @borderSizeH4;
             border-bottom: @borderSizeH4 solid @colorH4BorderBottom;
 
@@ -342,6 +341,7 @@
             //margin-top: @magicNumber;
             margin-bottom: @magicNumber;
             padding-left: 1.5em;
+            text-decoration: none;
 
             p {
                 margin-top: @magicNumber / 2;

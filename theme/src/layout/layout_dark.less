@@ -1,0 +1,279 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * Grid layout
+ */
+ .row {
+     #desinax-vgrid.row();
+     // background-color: #0f0;
+     margin-bottom: 12px;
+ }
+
+// Show the vetical grid
+ .vgrid .inner-wrap {
+     //@gridImage: "../img/grid_24x30x10-nomargin.png";
+    @gridImage: "http://localhost:8080/dbwebb/design/me/redovisa/theme/src/@desinax/vertical-grid/img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+// Show the horizontal grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+ /**
+  * General layout
+  */
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+.inner-wrap-header,
+.inner-wrap-footer {
+    #desinax-vgrid.grid(100%);
+}
+
+.inner-wrap-flash {
+    #desinax-vgrid.grid(100%);
+}
+
+/**
+/* Header *
+*/
+.outer-wrap-header {
+    background-color: @color1;
+    color: #fec99b;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.row(3);
+    margin: 0 auto;
+}
+
+.region-header {
+    margin-bottom: @magicNumber * 0.15em;
+}
+.region-header-col-1 {
+    #desinax-vgrid.column(2);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(20);
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(2);
+
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text {
+    display: none;
+}
+
+.rm-navbar {
+    list-style-type: none;
+    font-family: @myfontparagraph;
+    word-spacing: 2em;
+    color: white;
+}
+
+.rm-navbar li {
+    display: inline;
+}
+
+.rm-navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.rm-navbar a:hover {
+    background: @color2;
+    color: white;
+}
+
+.rm-navbar a:active {
+    background: @color2;
+    color: white;
+}
+
+.rm-navbar .selected {
+    background-color: @color5;
+}
+
+/**
+/* Flash *
+*/
+.region-flash {
+    margin-bottom: @magicNumber;
+}
+
+/**
+/* Main *
+*/
+.region-breadcrumb {
+    display: none;
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.row(6);
+}
+
+.region-main {
+    #desinax-vgrid.column((@columns / 4) * 3);
+    #desinax-vgrid.push(2);
+    margin-bottom: @magicNumber;
+
+    &.has-sidebar {
+    #desinax-vgrid.column((@columns / 3) * 2);
+}
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 12);
+}
+}
+
+.region-sidebar-left {
+    #desinax-vgrid.column(@columns / 4);
+    background-color: @color2;
+    padding-left: 1em;
+    padding-right: 0.5em;
+
+    & p {
+        color: white;
+    }
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns / 4);
+    background-color: @color2;
+    padding-left: 1em;
+    padding-right: 0.5em;
+
+    & p {
+        color: white;
+    }
+}
+
+.article {
+    #desinax-vgrid.push(1);
+    grid-column-start: 1;
+    align-self: start;
+    align-content: start;
+
+}
+
+.next {
+    color: @color1;
+    font-family: @fontFamilyBody;
+    font-size: @fontSizeSmall;
+    text-align: left;
+    float: right;
+}
+
+.previous {
+    color: @color1;
+    font-family: @fontFamilyBody;
+    font-size: @fontSizeSmall;
+    text-align: left;
+    float: left;
+}
+
+.byline {
+    #desinax-vgrid.column((@columns / 5) * 4);
+    #desinax-vgrid.push(1);
+    height: 150px;
+    border-top: solid 0.1em;
+    margin-bottom: @magicNumber;
+}
+
+.byline img {
+    width: 70px;
+    margin-top: 20px;
+    float: left;
+}
+
+.byline p {
+    padding-left: 100px;
+    display: block;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.textbylineimg {
+    font-style: italic;
+    clear: both;
+}
+
+/* Sidebar layout */
+
+
+.toc {
+    color: white;
+    list-style-type: none;
+    font-family: @myfontparagraph;
+    padding-left: 1em;
+    color: white;
+}
+
+
+
+/* Footer*/
+.outer-wrap-footer {
+    background-color: @color1;
+    color: white;
+}
+
+.inner-wrap-footer {
+    color: white;
+}
+
+.region-footer {
+    margin-bottom: @magicNumber;
+}
+
+.region-footer p {
+    color: white;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.footer-column-1 {
+    #desinax-vgrid.push(3);
+}
+
+.footer-column-2 {
+    #desinax-vgrid.push(3);
+}
+
+.footer-column-3 {
+    #desinax-vgrid.push(3);
+}
+
+.region-footer>.block {
+    width: 100%;
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * LESS version of the stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03.
  */
@@ -58,6 +58,48 @@
      * Enable all default typographic elements.
      */
 }
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v4/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Londrina Sketch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Londrina Sketch Regular'), local('LondrinaSketch-Regular'), url(https://fonts.gstatic.com/s/londrinasketch/v8/c4m41npxGMTnomOHtRU68eIJn8qvXmP9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pathway Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'), url(https://fonts.gstatic.com/s/pathwaygothicone/v8/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-tS1Za.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Vidaloka '), local('Vidaloka-Regular'), url(https://fonts.gstatic.com/s/vidaloka/v12/7cHrv4c3ipenMKlEavs7wHo.ttf) format('truetype');
+}
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -82,11 +124,11 @@ body {
   font: 16px/1.5 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
-  color: #371e08;
+  color: #7a726a;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 p {
-  color: #371e08;
+  color: #7a726a;
   margin-bottom: 24px;
 }
 img {
@@ -486,8 +528,8 @@ hr::after {
 /* Header *
 */
 .outer-wrap-header {
-  background-color: #00263a;
-  color: #fec99b;
+  background-color: #CCC461;
+  color: white;
 }
 .inner-wrap-header {
   display: block;
@@ -533,27 +575,27 @@ hr::after {
 }
 .my-navbar {
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   word-spacing: 2em;
-  color: #fec99b;
+  color: white;
 }
 .my-navbar li {
   display: inline;
 }
 .my-navbar a {
-  color: #f3e1ce;
+  color: #B0C37B;
   text-decoration: none;
 }
 .my-navbar a:hover {
-  background: #f3e1ce;
-  color: #7c7b7b;
+  background: #B0C37B;
+  color: #D9D4B3;
 }
 .my-navbar a:active {
-  background: #eec497;
-  color: #7c7b7b;
+  background: #F4D5A6;
+  color: #D9D4B3;
 }
 .my-navbar .selected {
-  background-color: #eec497;
+  background-color: #F55071;
 }
 /**
 /* Flash *
@@ -612,9 +654,10 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
+  background-color: #D9D4B3;
   padding-left: 1em;
   padding-right: 0.5em;
+  color: white;
 }
 .region-sidebar-right {
   display: inline;
@@ -622,8 +665,8 @@ hr::after {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  background-color: #fec99b;
-  color: #371e08;
+  background-color: #D9D4B3;
+  color: white;
   padding-left: 1em;
   padding-right: 0.5em;
 }
@@ -634,14 +677,14 @@ hr::after {
   align-content: start;
 }
 .next {
-  color: #371e08;
+  color: #7a726a;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.875em;
   text-align: left;
   float: right;
 }
 .previous {
-  color: #371e08;
+  color: #7a726a;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.875em;
   text-align: left;
@@ -675,15 +718,14 @@ hr::after {
 }
 /* Sidebar layout */
 .toc {
-  color: #371e08;
+  color: white;
   list-style-type: none;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   padding-left: 1em;
-  color: white;
 }
 /* Footer*/
 .outer-wrap-footer {
-  background-color: #fa6f53;
+  background-color: #F55071;
   color: white;
 }
 .inner-wrap-footer {
@@ -693,7 +735,7 @@ hr::after {
   margin-bottom: 24px;
 }
 .region-footer p {
-  color: #fec99b;
+  color: white;
 }
 .footer-column {
   display: inline;

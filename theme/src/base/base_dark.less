@@ -1,0 +1,47 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+ /* Poor-mans normalize */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+// Variables
+@bgColorHtml: #ffffff;
+@bgColorBody: #fec99b;
+@colorBody: #371e08;
+@bgColorSidebar: @color5;
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 16px;
+
+@font-face {
+    font-family: "Cheveuxdange";
+    src: url("/Bibliotek/Fonts/Cheveuxdange.ttf") format("opentype");
+}
+
+html {
+    overflow-y: scroll;
+    background-color: transparent;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody); // Activate the grid base font
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    font-family: @myfontparagraph;
+}
+
+p {
+    color: @colorBody;
+    margin-bottom: @magicNumber;
+}
+
+img {
+    max-width: 100%;
+}
