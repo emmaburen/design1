@@ -58,5 +58,10 @@ return [
             "url" => "rapport",
             "title" => "Rapport för KMOM04",
         ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Bloggsida för KMOM05",
+        ],
     ],
 ];

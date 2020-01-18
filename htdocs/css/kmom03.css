@@ -79,7 +79,7 @@ html {
   background-color: transparent;
 }
 body {
-  font: 16px/1.5 'Source Sans Pro', sans-serif;
+  font: 16px/1.5 "sans-serif";
   margin: 0;
   padding: 0;
   color: #371e08;
@@ -173,23 +173,17 @@ img {
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
-h1 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-h1 img {
-  margin: 0;
-}
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Vidaloka", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "serif";
   margin-top: 24px;
   margin-bottom: 24px;
 }
+h1 img,
 h2 img,
 h3 img,
 h4 img,
@@ -200,9 +194,9 @@ h6 img {
 h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
-  font-weight: bold;
-  border-bottom: 0px solid #666;
-  margin-bottom: 24px;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -219,8 +213,8 @@ h2 {
   font-size: 1.875em;
   line-height: 1.6;
   font-weight: normal;
-  margin-bottom: 24px;
-  border-bottom: 0px solid #CCC;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -229,8 +223,8 @@ h3 {
   font-size: 1.75em;
   line-height: 1.71428571;
   font-weight: normal;
-  margin-bottom: 24px;
-  border-bottom: 0px solid #EEE;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -239,8 +233,8 @@ h4 {
   font-size: 1.5em;
   line-height: 1;
   font-weight: normal;
-  margin-bottom: 24px;
-  border-bottom: 0px solid #EEE;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -248,8 +242,8 @@ h4 + h5 {
 h5 {
   font-size: 1.25em;
   line-height: 1.2;
-  margin-bottom: 24px;
-  border-bottom: 0px solid #EEE;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -257,8 +251,8 @@ h5 + h6 {
 h6 {
   font-size: 1.25em;
   line-height: 1.2;
-  margin-bottom: 24px;
-  border-bottom: 0px solid #EEE;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
 }
 p {
   margin-bottom: 24px;
@@ -486,7 +480,7 @@ hr::after {
 /* Header *
 */
 .outer-wrap-header {
-  background-color: #00263a;
+  background-color: #fec99b;
   color: #fec99b;
 }
 .inner-wrap-header {
@@ -533,7 +527,7 @@ hr::after {
 }
 .my-navbar {
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
   word-spacing: 2em;
   color: #fec99b;
 }
@@ -635,14 +629,14 @@ hr::after {
 }
 .next {
   color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "sans-serif";
   font-size: 0.875em;
   text-align: left;
   float: right;
 }
 .previous {
   color: #371e08;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "sans-serif";
   font-size: 0.875em;
   text-align: left;
   float: left;
@@ -677,7 +671,7 @@ hr::after {
 .toc {
   color: #371e08;
   list-style-type: none;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
   padding-left: 1em;
   color: white;
 }
